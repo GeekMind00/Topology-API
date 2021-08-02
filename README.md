@@ -60,8 +60,5 @@ $ npm run test
 ```sh
 $ npm run doc
 ```
-## Documentation
- >[docs](./doc/index.html)
-## Code Analysis
->[coverage](./coverage/index.html)
+
 
