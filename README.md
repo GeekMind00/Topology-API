@@ -60,5 +60,8 @@ $ npm run test
 ```sh
 $ npm run doc
 ```
-
+## Documentation
+ > doc -> index.html
+## Code Analysis
+> coverage -> index.html
 
