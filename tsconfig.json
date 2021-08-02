@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true
+    },
+    "files": [
+      "api.ts",
+      "topology.ts",
+      "logger.ts",
+      "src.ts",
+    ]
+    }

@@ -1,0 +1,6 @@
+{
+    "entryPoints": ["./api.ts","./topology.ts"],
+    "out": "doc",
+    "exclude":"api.test.ts"
+  }
+ 

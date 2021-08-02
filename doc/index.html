@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>topology-api</title>
+	<meta name="description" content="Documentation for topology-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">topology-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>topology-api</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>Topology-API</p>
+				<a href="#about-the-project" id="about-the-project" style="color: inherit; text-decoration: none;">
+					<h2>About The Project</h2>
+				</a>
+				<blockquote>
+					<p>Topology-API is an API that provides the functionality to access, manage and store device topologies. The best candidate for such an application is c++, but since I wanted to deliver it as fast as possible, I thought about javascript, but once again JS can&#39;t deal well with OOP applications. so I went with a similar yet better OOP language: typescript. Also has easy testing &amp; documentation.   </p>
+				</blockquote>
+				<a href="#built-with" id="built-with" style="color: inherit; text-decoration: none;">
+					<h3>Built with</h3>
+				</a>
+				<ul>
+					<li>main project <a href="https://www.typescriptlang.org/">typescript</a></li>
+					<li>Unit testing: <a href="https://jestjs.io/">jest</a>.</li>
+					<li>Function documentation: <a href="https://typedoc.org">typedoc</a>.</li>
+				</ul>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<blockquote>
+					<p>This is an list of needed instructions to set up your project locally, to get a local copy up and running follow these instructions.</p>
+				</blockquote>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h3>Installation</h3>
+				</a>
+				<ol>
+					<li><strong><em>Clone the repository</em></strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">git clone git@github.com:GeekMind00/Topology-API.git</span>
+</code></pre>
+				<ol start="2">
+					<li><strong><em>Navigate to repository directory</em></strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">$ </span><span style="color: #795E26">cd</span><span style="color: #000000"> Topology-API</span>
+</code></pre>
+				<ol start="3">
+					<li><strong><em>Install dependencies</em></strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">$ npm i</span>
+</code></pre>
+				<a href="#running" id="running" style="color: inherit; text-decoration: none;">
+					<h3>Running</h3>
+				</a>
+				<ol>
+					<li><strong><em>Running the application</em></strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">$ npm run start</span>
+</code></pre>
+				<ul>
+					<li>Console Commands:<ul>
+							<li>To read a topology from a json file and store it in memory: <code>read [filename]</code></li>
+							<li>To write a topology from memory to a json file: <code>write [topologyID] </code></li>
+							<li>To delete a certain topology from memory: <code>delete [topologyID]</code></li>
+							<li>To query all the topologies in memory: <code>getTopologies </code> </li>
+							<li>To query all devices of a certain topology: <code>getDevices [topologyID]</code></li>
+							<li>To query all devices of a certain topology that has a certain netlist node: <code>getDevicesWithNetlistNode [topologyID] [netlistNodeID]</code></li>
+						</ul>
+					</li>
+				</ul>
+				<ol start="2">
+					<li><strong>Running the tests</strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">$ npm run </span><span style="color: #795E26">test</span>
+</code></pre>
+				<ol start="3">
+					<li><strong>Running the documentation</strong></li>
+				</ol>
+				<pre><code class="language-sh"><span style="color: #000000">$ npm run doc</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/api.html">api</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/topology.html">topology</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

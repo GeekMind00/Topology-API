@@ -1,0 +1,30 @@
+{
+  "name": "topology-api",
+  "version": "1.0.0",
+  "description": "An API to Provide the funconality to access, manage and store device topologies.",
+  "main": "src.ts",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
+  },
+  "scripts": {
+    "start": "tsc src.ts && node src.js",
+    "test": "Jest --watchAll  --verbose --runInBand --detectOpenHandles  --coverage",
+    "doc":"npx typedoc api.ts  topology.ts"
+  },
+  "author": "Mostafa Mohamed Essam",
+  "license": "ISC",
+  "dependencies": {
+    "nodejs": "^0.0.0",
+    "process": "^0.11.10",
+    "readline": "^1.3.0",
+    "typedoc": "^0.21.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.7",
+    "jest": "^27.0.6"
+  }
+}
